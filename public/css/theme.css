@@ -1,0 +1,332 @@
+/* ===== Dark Theme ===== */
+html.dark {
+    background-color: #333;
+}
+
+body.dark {
+    background-color: #232333;
+}
+
+/* ===== ปรับสีต่าง ๆ เมื่อธีมเป็น Dark ===== */
+html.dark .card, 
+html.dark .d-flex ,
+html.dark .navbar, 
+html.dark .sidebar, 
+html.dark .layout-navbar, 
+html.dark .footer {
+    background-color: #2b2c40 !important;
+    color: white !important;
+}
+
+/* ===== ทำให้ตัวอักษรทั้งหมดเป็นสีขาว ===== */
+html.dark body, 
+html.dark .sidebar .text-truncate, 
+html.dark .nav-link {
+    color: white !important;
+}
+
+/* ===== ป้องกัน Badge และปุ่ม Action ไม่ให้เปลี่ยนเป็นสีขาว ===== */
+html.dark body *:not(.badge):not(.btn-outline-primary):not(.btn-outline-danger):not(.btn-action):not(.btn-action i) {
+    color: white !important;
+}
+
+/* ===== ปรับสี Badge Status ===== */
+html.dark .badge.bg-label-primary { 
+    background-color: #198754 !important;
+    color: white !important;
+}
+
+html.dark .badge.bg-label-danger { 
+    background-color: #dc3545 !important;
+    color: white !important;
+}
+
+/* ===== ปรับ Sidebar ให้ทำงานถูกต้อง ===== */
+html.dark .sidebar .menu-item.active > .menu-link {
+    background-color: transparent !important;
+    color: #0d6efd !important;
+    font-weight: bold !important;
+}
+
+html.dark .sidebar .menu-link:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+}
+
+/* ===== ปรับสีของปุ่ม Edit และ Delete เมื่อ Hover ===== */
+html.dark .btn-outline-primary:hover {
+    background-color: #28a745 !important;
+    color: white !important;
+}
+
+html.dark .btn-outline-danger:hover {
+    background-color: #F44336 !important;
+    color: white !important;
+}
+
+/* ===== ปรับสีของ Footer ===== */
+html.dark .footer {
+    background-color: #232333 !important;
+    color: white !important;
+}
+
+/* ===== ปรับสีของ Search Input ===== */
+html.dark .form-control {
+    background-color: #2b2c40 !important;
+    color: white !important;
+    border-color: #666 !important;
+}
+
+html.dark .form-control::placeholder {
+    color: #bbb !important;
+}
+
+/* ===== ป้องกัน Dropdown และ Select ไม่ให้สีเพี้ยน ===== */
+html.dark .form-select {
+    background-color: #2b2c40 !important;
+    color: white !important;
+    border-color: #ddd !important;
+}
+
+html.dark .form-select option {
+    background-color: #2b2c40 !important;
+    color: white !important;
+}
+
+/* ===== Dark Theme Pagination ===== */
+html.dark .pagination .page-item .page-link {
+    background-color: #232333 !important;
+    color: white !important;
+    border-color: #444 !important;
+}
+
+html.dark .pagination .page-item.active .page-link {
+    background-color: #28A745 !important;
+    color: white !important;
+    border-color: #28A745 !important;
+    pointer-events: none;
+}
+
+html.dark .pagination .page-item.disabled .page-link {
+    background-color: #2a2a3c !important;
+    color: #777 !important;
+    border-color: #444 !important;
+}
+
+html.dark .pagination .page-item:not(.active) .page-link:hover {
+    background-color: #34344a !important;
+    color: white !important;
+}
+
+/* ===== ปรับสีของเมนูใน Sidebar เมื่อ hover ===== */
+html.dark .sidebar .menu-link:hover {
+    background-color: #696CFF !important;
+    color: white !important;
+}
+
+/* ===== Dark Theme: Highlight Main Menu Item when Sub-Menu is Active ===== */
+html.dark .sidebar .menu-item.open > .menu-link.menu-toggle,
+html.dark .sidebar .menu-item.active > .menu-link.menu-toggle {
+    background-color: #696CFF !important;
+    color: white !important; 
+    font-weight: bold !important;
+}
+
+/* แก้ไขสีของตัวอักษรในเมนูหลักเมื่อเมนูย่อย active */
+html.dark .sidebar .menu-item > .menu-link.menu-toggle {
+    color: white !important; 
+}
+
+/* ===== เพิ่มการไฮไลต์สีเมนูหลักเมื่อเมนูย่อย active ===== */
+html.dark .sidebar .menu-item.open > .menu-link.menu-toggle:hover,
+html.dark .sidebar .menu-item.active > .menu-link.menu-toggle:hover {
+    background-color: #696CFF !important;
+    color: white !important;
+}
+
+/* เมนูที่ active ในโหมด Dark Theme */
+html.dark .sidebar .menu-item.active > .menu-link.menu-toggle {
+    color: white !important;
+}
+
+/* ===== ปรับสีของเมนูใน Sidebar เมื่อ hover ===== */
+html.dark .sidebar .menu-link:hover {
+    background-color: #36374A !important;
+    color: white !important;
+}
+
+/* ซ่อนเนื้อหาเมื่อกำลังโหลด */
+html.loading,
+body.loading {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+html:not(.loading) {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ทำให้ dropdown-menu เปลี่ยนสีตามธีมมืด */
+.dark .dropdown-menu {
+    background-color: #2B2C40 !important;
+    color: #ffffff !important;
+    
+}
+
+/* เปลี่ยนสีตัวอักษรของ dropdown-item */
+.dark .dropdown-menu .dropdown-item {
+    color: #ffffff !important;
+}
+
+/* เปลี่ยนสี hover ให้เข้ากับธีมมืด */
+.dark .dropdown-menu .dropdown-item:hover {
+    background-color: #3a3d4d !important;
+}
+
+body.dark-mode .input-group-text {
+    background-color: #696cff;
+    color: #ffffff; 
+}
+
+/* ===== ปรับ SweetAlert ในโหมดธีมมืด ===== */
+html.dark .swal2-popup {
+    background-color: #2b2c40 !important;
+    color: white !important;
+    border: 1px solid #444 !important;
+}
+
+html.dark .swal2-title {
+    color: white !important;
+}
+
+html.dark .swal2-content {
+    color: #ddd !important;
+}
+
+html.dark .swal2-confirm {
+    background-color: #28a745 !important;
+    color: white !important;
+    border-color: #28a745 !important;
+}
+
+html.dark .swal2-cancel {
+    background-color: #dc3545 !important;
+    color: white !important;
+    border-color: #dc3545 !important;
+}
+
+/* ปรับไอคอน ! ให้มองเห็น */
+html.dark .swal2-icon {
+    color: #F8BB86 !important;
+    border-color: #F8BB86 !important;
+}
+
+html.dark .swal2-icon.swal2-warning {
+    background-color: transparent !important;
+}
+
+/* ===== Dark Theme for Add/Edit Pages ===== */
+
+/* ปรับสีของ Nav Tabs */
+html.dark .nav-tabs .nav-link {
+    background-color: #2b2c40 !important;
+    color: #ffffff !important;
+    border-color: #444 !important;
+}
+
+html.dark .nav-tabs .nav-link.active {
+    background-color: #444 !important;
+    border-color: #666 !important;
+}
+
+/* ปรับสีของ Tab Content */
+html.dark .tab-content {
+    background-color: #2b2c40 !important;
+    color: #ffffff !important;
+    border-color: #444 !important;
+}
+
+/* ปรับสีของ Input, Textarea และ Placeholder */
+html.dark .mb-4.row .col-md-10 .ck.ck-content,
+html.dark .ck-toolbar
+{
+    background-color: #2b2c40 !important;
+    color: #ffffff !important;
+    border-color: #666 !important;
+}
+
+/* ปรับสี Placeholder ในธีมมืด */
+html.dark ::placeholder {
+    color: #ccc !important;
+    opacity: 1;
+}
+
+html.dark :-ms-input-placeholder {
+    color: #ccc !important;
+}
+
+html.dark ::-ms-input-placeholder {
+    color: #ccc !important;
+}
+
+/* ปรับสีของ Label */
+html.dark label {
+    color: #ffffff !important;
+}
+
+/* ปรับสีของ Error Message */
+html.dark .text-danger {
+    color: #ff6b6b !important;
+}
+
+/* ===== ปรับสไตล์ของ Checkbox ในธีมมืด ===== */
+html.dark .form-check-input {
+    background-color: #ffffff !important;
+    border-color: #666 !important;
+}
+
+html.dark .form-check-input:checked {
+    background-color: #28a745 !important;
+    border-color: #28a745 !important;
+}
+
+html.dark .form-check-input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25) !important;
+}
+
+html.dark .form-check-input:checked::before {
+    color: #ffffff !important;
+}
+
+/* ===== ปรับสไตล์ของปุ่ม Save ===== */
+html.dark .btn-success {
+    background-color: #28a745 !important;
+    color: #ffffff !important;
+    border-color: #28a745 !important;
+    box-shadow: none !important;
+}
+
+html.dark .btn-success:hover {
+    background-color: #218838 !important;
+    border-color: #1e7e34 !important;
+}
+
+/* ลบพื้นหลังของ Flexbox Parent */
+html.dark .d-flex {
+    background-color: transparent !important;
+}
+
+/* ปรับสีของปุ่ม Add ที่อยู่ใน d-flex */
+html.dark .d-flex .btn-primary {
+    background-color: #28a745 !important;
+    color: #ffffff !important;
+    border-color: #28a745 !important;
+    box-shadow: none !important;
+}
+
+html.dark .d-flex .btn-primary:hover {
+    background-color: #218838 !important;
+    border-color: #1e7e34 !important;
+}
